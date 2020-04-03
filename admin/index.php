@@ -46,26 +46,30 @@
         <!-- Side navigation links -->
         <li>
           <ul class="collapsible collapsible-accordion">
-        
+
             <!-- Simple link -->
             <li>
-              <a href="../alerts/alerts.html" class="collapsible-header waves-effect"><i
+              <a href=#" class="collapsible-header waves-effect"><i
+                  class="w-fa far fa-bell"></i>Home</a>
+            </li>
+            <li>
+              <a href="Announcement.php" class="collapsible-header waves-effect"><i
                   class="w-fa far fa-bell"></i>Announcement</a>
             </li>
             <li>
-              <a href="../modals/modals.html" class="collapsible-header waves-effect"><i
+              <a href="Promotion.php" class="collapsible-header waves-effect"><i
                   class="w-fa fas fa-bolt"></i>Promotion</a>
             </li>
             <li>
-              <a href="../charts/charts.html" class="collapsible-header waves-effect"><i
+              <a href="UserControl.php" class="collapsible-header waves-effect"><i
                   class="w-fa fas fa-chart-pie"></i>User Control</a>
             </li>
             <li>
-              <a href="../calendar/calendar.html" class="collapsible-header waves-effect"><i
+              <a href="Discount.php" class="collapsible-header waves-effect"><i
                   class="w-fa far fa-calendar-check"></i>Discount Promotion</a>
             </li>
             <li>
-              <a href="../sections/sections.html" class="collapsible-header waves-effect"><i
+              <a href="Management.php" class="collapsible-header waves-effect"><i
                   class="w-fa fas fa-th-large"></i>Management</a>
             </li>
 
