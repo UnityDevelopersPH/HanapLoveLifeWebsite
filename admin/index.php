@@ -49,7 +49,7 @@
 
             <!-- Simple link -->
             <li>
-              <a href="Announcement.phg" class="collapsible-header waves-effect"><i
+              <a href="Announcement.php" class="collapsible-header waves-effect"><i
                   class="w-fa far fa-bell"></i>Announcement</a>
             </li>
             <li>
