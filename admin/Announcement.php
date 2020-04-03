@@ -49,6 +49,10 @@
 
             <!-- Simple link -->
 						<li>
+              <a href="index.php" class="collapsible-header waves-effect"><i
+                  class="w-fa far fa-bell"></i>Announcement</a>
+            </li>
+						<li>
               <a href="Announcement.php" class="collapsible-header waves-effect"><i
                   class="w-fa far fa-bell"></i>Announcement</a>
             </li>
