@@ -157,20 +157,11 @@
   <!-- Main Navigation -->
 
   <!-- Main layout -->
-  
+
   <!-- Main layout -->
 
   <!-- Footer -->
-  <footer class="page-footer pt-0 mt-5 rgba-stylish-light">
 
-    <!-- Copyright -->
-    <div class="footer-copyright py-3 text-center">
-      <div class="container-fluid">
-        © 2020 Copyright: <a href="https://hanaplovelife.iampseudox.uk/" target="_blank"> Hanap LoveLife </a>
-      </div>
-    </div>
-
-  </footer>
   <!-- Footer -->
 
   <!-- SCRIPTS -->
