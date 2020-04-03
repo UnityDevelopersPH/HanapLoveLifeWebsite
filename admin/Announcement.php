@@ -104,6 +104,13 @@
 
   <!-- Main layout -->
 
+	<main>
+
+		<input type="text" placeholder="Announcement in application">
+
+
+	</main>
+
   <!-- Main layout -->
 
   <!-- SCRIPTS -->
