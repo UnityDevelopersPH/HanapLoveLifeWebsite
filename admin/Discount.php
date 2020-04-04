@@ -51,102 +51,28 @@
   <!-- Main Navigation -->
   <main>
     <div class="row">
-      <!-- Card -->
-      <div class="col-md-4">
-<div class="card card-cascade narrower">
- <div class="view view-cascade overlay">
-    <img class="card-img-top" src="img/img1.png"
-      alt="Card image cap">
-    <a>
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
-  <!-- Card body -->
-  <div class="card-body">
-
-    <!-- Default form subscription -->
-    <form>
-      <p class="h4 text-center py-4">Normal</p>
-
-      <!-- Default input name -->
-      <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Enter Price</label>
-      <input type="text" id="defaultFormCardNameEx" class="form-control">
-      <div class="text-center py-5">
-        <button class="btn btn-purple" type="submit">Submit</button>
-      </div>
-    </form>
-    <!-- Default form subscription -->
-
-  </div>
-  <!-- Card body -->
+    <!-- Default inline 1-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline1">1 Month</label>
 </div>
+
+<!-- Default inline 2-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline2">3 Months</label>
 </div>
-<!-- Card -->
 
-<!-- Card -->
-<div class="col-md-4">
-<div class="card card-cascade narrower">
- <div class="view view-cascade overlay">
-    <img class="card-img-top" src="img/img2.png"
-      alt="Card image cap">
-    <a>
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
-
-  <!-- Card body -->
-  <div class="card-body">
-
-    <!-- Default form subscription -->
-    <form>
-      <p class="h4 text-center py-4">Premium</p>
-
-      <!-- Default input name -->
-      <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Enter Price</label>
-      <input type="text" id="defaultFormCardNameEx" class="form-control">
-      <div class="text-center py-5">
-        <button class="btn btn-purple" type="submit">Submit</button>
-      </div>
-    </form>
-    <!-- Default form subscription -->
-
-  </div>
-  <!-- Card body -->
+<!-- Default inline 3-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline3">6 Months</label>
 </div>
+
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline3">12 Months</label>
 </div>
-<!-- Card -->
-
-<!-- Card -->
-<div class="col-md-4">
-<div class="card card-cascade narrower">
- <div class="view view-cascade overlay">
-    <img class="card-img-top" src="img/img3.png"
-      alt="Card image cap">
-    <a>
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
-  <!-- Card body -->
-  <div class="card-body">
-    <!-- Default form subscription -->
-    <form>
-      <p class="h4 text-center py-4">Season</p>
-
-      <!-- Default input name -->
-      <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Enter Price</label>
-      <input type="text" id="defaultFormCardNameEx" class="form-control">
-      <div class="text-center py-5 mt-2">
-        <button class="btn btn-purple" type="submit">Submit</button>
-      </div>
-    </form>
-    <!-- Default form subscription -->
-
-  </div>
-  <!-- Card body -->
-</div>
-</div>
-<!-- Card -->
-
       
   </main>
 
