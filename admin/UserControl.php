@@ -73,37 +73,18 @@
 
           </div>
           <!-- Grid row -->
-
-
         <!-- Top Table UI -->
 
         <div class="card card-cascade narrower z-depth-1">
-
           <!-- Card image -->
           <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
-
-            <div>
-              <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fas fa-th-large mt-0"></i></button>
-              <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fas fa-columns mt-0"></i></button>
-            </div>
-
             <a href="" class="white-text mx-3">Hanap LoveLife User's</a>
-
-            <div>
-              <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fas fa-pencil-alt mt-0"></i></button>
-              <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fas fa-eraser mt-0"></i></button>
-              <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fas fa-info-circle mt-0"></i></button>
-            </div>
-
           </div>
           <!-- /Card image -->
-
           <div class="px-4">
-
             <div class="table-responsive">
               <!-- Table -->
               <table class="table table-hover mb-0 align-middle">
-
                 <!-- Table head -->
                 <thead>
                   <tr>
