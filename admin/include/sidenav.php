@@ -32,10 +32,6 @@
                   class="w-fa far fa-bell"></i>Announcement</a>
             </li>
             <li>
-              <a href="Promotion.php" class="collapsible-header waves-effect"><i
-                  class="w-fa fas fa-bolt"></i>Promotion</a>
-            </li>
-            <li>
               <a href="UserControl.php" class="collapsible-header waves-effect"><i
                   class="w-fa fas fa-chart-pie"></i>User Control</a>
             </li>
