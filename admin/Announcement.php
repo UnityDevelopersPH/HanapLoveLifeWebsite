@@ -85,12 +85,10 @@
 
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
-
       <!-- SideNav slide-out button -->
       <div class="float-left">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
       </div>
-
       <!-- Breadcrumb -->
       <div class="breadcrumb-dn mr-auto">
         <p>Hanap LoveLife</p>
@@ -105,10 +103,34 @@
   <!-- Main layout -->
 
 	<main>
-
-		<input type="text" placeholder="Announcement in application">
-
-
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+             <h3 class=""> Announcment </h3>
+              <hr>
+            <div class="md-form">
+              <textarea type="text" id="form7" class="md-textarea md-textarea-auto form-control" mdbInput style="resize: none;"></textarea>
+              <label for="form7">Type your Announcment!</label>
+              <button class="btn btn-danger col-md-12"> Submit </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br/>
+  <h3 class="display-5"> Latest Announcements </h3>
+  <br/>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+              <div class="card-body">
+            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque
+      laudantium, totam rem aperiam. </p>
+        </div>
+      </div>
+    </div>
+      </div>
 	</main>
 
   <!-- Main layout -->

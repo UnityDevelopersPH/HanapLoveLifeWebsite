@@ -25,10 +25,8 @@
 
    <?php include 'include/sidenav.php'; ?>
     <!-- Sidebar navigation -->
-
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
-
       <!-- SideNav slide-out button -->
       <div class="float-left">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
@@ -38,25 +36,15 @@
       <div class="breadcrumb-dn mr-auto">
         <p>Hanap LoveLife</p>
       </div>
-
     </nav>
     <!-- Navbar -->
-
   </header>
-
-
   <!-- Main layout -->
    <main>
     <div class="container-fluid">
-
       <!-- Section: Basic examples -->
       <section>
-
-      
-
         <!-- Top Table UI -->
-
-
           <!-- Grid row -->
           <div class="row">
             <!-- Grid column -->

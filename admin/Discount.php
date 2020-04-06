@@ -50,30 +50,184 @@
   </header>
   <!-- Main Navigation -->
   <main>
-    <div class="row">
-    <!-- Default inline 1-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline1">1 Month</label>
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <h5 class="card-header ripe-malinka-gradient white-text text-center py-4">
+        <strong>Enter Plan for Users</strong>
+        </h5>
+        <div class="card-body card-body-cascade text-center pb-0">
+          <form class="text-center" style="color: #757575;" action="#!">
+            <div class="md-form">
+              <input type="text" id="materialLoginFormEmail" class="form-control">
+              <label for="materialLoginFormEmail">Enter Amount</label>
+            </div></form>
+            <!--Blue select-->
+            <select class="mdb-select md-form dropdown-white-text dropdown-danger">
+              <option value="" disabled selected>Choose your Plan</option>
+              <option value="" class="white-text">
+                Normal
+              </option>
+              <option value="">
+                Premium
+              </option>
+              <option value="Season">
+                Season
+              </option>
+            </select>
+            <!-- Default inline 1-->
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+              <label class="custom-control-label" for="defaultInline1">1 Month</label>
+            </div>
+            <!-- Default inline 2-->
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+              <label class="custom-control-label" for="defaultInline2">3 Months</label>
+            </div>
+            <!-- Default inline 3-->
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+              <label class="custom-control-label" for="defaultInline3">6 Months</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+              <label class="custom-control-label" for="defaultInline4">12 Months</label>
+            </div>
+            <hr>
+            <button class="btn btn-danger col-md-12 btn-rounded mb-3"> Submit </button>
+          </div>
 
-<!-- Default inline 2-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline2">3 Months</label>
-</div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+   <!-- Grid row -->
+        <div class="row">
 
-<!-- Default inline 3-->
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline3">6 Months</label>
-</div>
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-5">
+            <!-- Card -->
+            <div class="pricing-card card">
 
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline3">12 Months</label>
-</div>
-      
+              <!-- Content -->
+              <div class="card-body">
+                <h5 class="font-weight-bold mt-3">Normal</h5>
+                <!-- Price -->
+               <div class="pt-0">
+                    <h2 class="h2-responsive display-2 mb-0">20</h2>
+                  </div>
+                <!-- Price -->
+                <ul class="list-unstyled striped title darker-striped">
+                  <li>
+                    <p>
+                      <strong>1</strong> project</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>100</strong> components</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>150</strong> features</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>200</strong> members</p>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-5">
+
+            <!-- Card -->
+            <div class="card card-image"
+              style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(8).jpg');">
+
+              <!-- Content -->
+              <div
+                class="text-white text-center pricing-card d-flex align-items-center rgba-indigo-strong py-3 px-3 rounded">
+
+                <!-- Content -->
+                <div class="card-body">
+                  <h5 class="font-weight-bold mt-2">Premium </h5>
+                  <!-- Price -->
+                  <div class="pt-0">
+                    <h2 class="h2-responsive display-2 mb-0">20</h2>
+                  </div>
+                  <!-- Price -->
+                  <ul class="list-unstyled striped">
+                    <li>
+                      <p>
+                        <strong>3</strong> projects</p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>200</strong> components</p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>250</strong> features</p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>300</strong> members</p>
+                    </li>
+                  </ul>
+            
+                </div>
+
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-5">
+            <!-- Card -->
+            <div class="pricing-card card">
+
+              <!-- Content -->
+              <div class="card-body">
+                <h5 class="font-weight-bold mt-3">Season</h5>
+                <!-- Price -->
+                <div class="pt-0">
+                    <h2 class="h2-responsive display-2 mb-0">20</h2>
+                  </div>
+                <!-- Price -->
+                <ul class="list-unstyled striped title darker-striped">
+                  <li>
+                    <p>
+                      <strong>5</strong> projects</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>300</strong> components</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>350</strong> features</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>400</strong> members</p>
+                  </li>
+                </ul>
+               
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
   </main>
 
   <!-- Main layout -->
@@ -123,6 +277,11 @@
 
       });
     });
+
+    // Material Select Initialization
+$(document).ready(function() {
+$('.mdb-select').materialSelect();
+});
 
   </script>
 
