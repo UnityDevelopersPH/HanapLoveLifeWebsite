@@ -21,78 +21,24 @@
 <body class="fixed-sn white-skin">
 
   <!-- Main Navigation -->
-  <header>
+   <header>
 
-    <!-- Sidebar navigation -->
-    <div id="slide-out" class="side-nav sn-bg-4 fixed">
-      <ul class="custom-scrollbar">
-
-        <!-- Logo -->
-        <li class="logo-sn waves-effect py-3">
-          <div class="text-center">
-            <a href="#" class="pl-0"><img src="img/logo.png">Hanap LoveLife</a>
-          </div>
-        </li>
-
-        <!-- Search Form -->
-        <li>
-          <form class="search-form" role="search">
-            <div class="md-form mt-0 waves-light">
-              <input type="text" class="form-control py-2" placeholder="Search">
-            </div>
-          </form>
-        </li>
-
-        <!-- Side navigation links -->
-        <li>
-          <ul class="collapsible collapsible-accordion">
-
-            <!-- Simple link -->
-						<li>
-              <a href="index.php" class="collapsible-header waves-effect"><i
-                  class="w-fa far fa-bell"></i>Home</a>
-            </li>
-						<li>
-              <a href="Announcement.php" class="collapsible-header waves-effect"><i
-                  class="w-fa far fa-bell"></i>Announcement</a>
-            </li>
-            <li>
-              <a href="Promotion.php" class="collapsible-header waves-effect"><i
-                  class="w-fa fas fa-bolt"></i>Promotion</a>
-            </li>
-            <li>
-              <a href="UserControl.php" class="collapsible-header waves-effect"><i
-                  class="w-fa fas fa-chart-pie"></i>User Control</a>
-            </li>
-            <li>
-              <a href="Discount.php" class="collapsible-header waves-effect"><i
-                  class="w-fa far fa-calendar-check"></i>Discount Promotion</a>
-            </li>
-            <li>
-              <a href="Management.php" class="collapsible-header waves-effect"><i
-                  class="w-fa fas fa-th-large"></i>Management</a>
-            </li>
-
-
-          </ul>
-        </li>
-        <!-- Side navigation links -->
-
-      </ul>
-      <div class="sidenav-bg mask-strong"></div>
-    </div>
+    <?php include 'include/sidenav.php'; ?>
     <!-- Sidebar navigation -->
 
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+
       <!-- SideNav slide-out button -->
       <div class="float-left">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
       </div>
+
       <!-- Breadcrumb -->
       <div class="breadcrumb-dn mr-auto">
         <p>Hanap LoveLife</p>
       </div>
+
 
     </nav>
     <!-- Navbar -->

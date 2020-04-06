@@ -44,8 +44,8 @@
                   class="w-fa far fa-calendar-check"></i>Discount Promotion</a>
             </li>
             <li>
-              <a href="Management.php" class="collapsible-header waves-effect"><i
-                  class="w-fa fas fa-th-large"></i>Management</a>
+              <a href="ReportBugs.php" class="collapsible-header waves-effect"><i
+                  class="w-fa fas fa-th-large"></i>Reported Bugs</a>
             </li>
 
           </ul>
