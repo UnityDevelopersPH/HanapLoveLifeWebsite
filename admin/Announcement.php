@@ -1,4 +1,8 @@
-	<!DOCTYPE html>
+  <?php
+   include('function/connection.php');
+   $result = $connect->query("SELECT * FROM `announce`");
+   ?>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -56,9 +60,11 @@
              <h3 class=""> Announcment </h3>
               <hr>
             <div class="md-form">
-              <textarea type="text" id="form7" class="md-textarea md-textarea-auto form-control" mdbInput style="resize: none;"></textarea>
+            <form action="function/function.php" method="post">
+              <textarea name="inputAnnounce" type="text" id="form7" class="md-textarea md-textarea-auto form-control" mdbInput style="resize: none;"></textarea>
               <label for="form7">Type your Announcment!</label>
-              <button class="btn btn-danger col-md-12"> Submit </button>
+              <Button type="submit" class="btn btn-danger col-md-12" name="announcement" value="submit">Insert Announcement</Button>
+              </form>
             </div>
           </div>
         </div>
@@ -68,14 +74,22 @@
   <h3 class="display-5"> Latest Announcements </h3>
   <br/>
     <div class="row">
-        <div class="col-md-12">
-          <div class="card">
-              <div class="card-body">
-            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque
-      laudantium, totam rem aperiam. </p>
-        </div>
-      </div>
+        <div class="col-md-12" style="margin-top:10;">
+
+            <?php
+              while($row = $result->fetch_assoc())
+              {
+                echo "<div class='card' style='margin-top:10px;'>
+                <div class='card-body'>
+              <p class='card-text'>".$row['announcement']."</p>
+              <p class='card-text' style='color:green;'>".$row['date']."</p>
+              </div>
+            </div>";
+              }
+
+            ?>
     </div>
+
       </div>
 	</main>
 

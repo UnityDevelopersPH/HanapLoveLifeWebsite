@@ -24,7 +24,7 @@
   <header>
 
     <?php include 'include/sidenav.php'; ?>
-    
+
     <!-- Sidebar navigation -->
 
     <!-- Navbar -->

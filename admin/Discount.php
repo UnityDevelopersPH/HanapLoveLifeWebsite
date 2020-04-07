@@ -1,4 +1,20 @@
-	<!DOCTYPE html>
+
+  <?php
+  include('function/connection.php');
+  include('function/class.php');
+
+
+  $resulta = $connect->query("SELECT * FROM discount");
+              while($row = $resulta->fetch_assoc())
+              {
+               $Sixmonths = $row['6months'];
+               $twelvemonths = $row['12months'];
+              }
+              $loadClasses = new loadClass();
+              $number = 1234.56;
+  ?>
+
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -57,47 +73,27 @@
         <h5 class="card-header ripe-malinka-gradient white-text text-center py-4">
         <strong>Enter Plan for Users</strong>
         </h5>
+        <form method="post" action="function/function.php">
         <div class="card-body card-body-cascade text-center pb-0">
           <form class="text-center" style="color: #757575;" action="#!">
             <div class="md-form">
-              <input type="text" id="materialLoginFormEmail" class="form-control">
-              <label for="materialLoginFormEmail">Enter Amount</label>
+              <input type="text" id="materialLoginFormEmail" name="percentage" class="form-control">
+              <label for="materialLoginFormEmail">Enter Percentage less %</label>
             </div></form>
-            <!--Blue select-->
-            <select class="mdb-select md-form dropdown-white-text dropdown-danger">
-              <option value="" disabled selected>Choose your Plan</option>
-              <option value="" class="white-text">
-                Normal
-              </option>
-              <option value="">
-                Premium
-              </option>
-              <option value="Season">
-                Season
-              </option>
-            </select>
-            <!-- Default inline 1-->
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-              <label class="custom-control-label" for="defaultInline1">1 Month</label>
-            </div>
-            <!-- Default inline 2-->
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-              <label class="custom-control-label" for="defaultInline2">3 Months</label>
-            </div>
+
             <!-- Default inline 3-->
             <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+              <input type="radio" class="custom-control-input" id="defaultInline3" value="6months" name="radio_months">
               <label class="custom-control-label" for="defaultInline3">6 Months</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+              <input type="radio" class="custom-control-input" id="defaultInline4" value="12months" name="radio_months">
               <label class="custom-control-label" for="defaultInline4">12 Months</label>
             </div>
             <hr>
-            <button class="btn btn-danger col-md-12 btn-rounded mb-3"> Submit </button>
+            <button type="submit" name="advantage" class="btn btn-danger col-md-12 btn-rounded mb-3"> Discount </button>
           </div>
+          </form>
 
         </div>
       </div>
@@ -113,31 +109,25 @@
 
               <!-- Content -->
               <div class="card-body">
-                <h5 class="font-weight-bold mt-3">Normal</h5>
+                <h5 class="font-weight-bold mt-3">1month</h5>
                 <!-- Price -->
                <div class="pt-0">
-                    <h2 class="h2-responsive display-2 mb-0">20</h2>
+
+                    <h2 class="h2-responsive display-2 mb-0">$3
+                    </h2>
                   </div>
                 <!-- Price -->
                 <ul class="list-unstyled striped title darker-striped">
                   <li>
                     <p>
-                      <strong>1</strong> project</p>
+                      <strong>Unlimited Matches</strong></p>
                   </li>
                   <li>
                     <p>
-                      <strong>100</strong> components</p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>150</strong> features</p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>200</strong> members</p>
+                      <strong>1</strong> Month</p>
                   </li>
                 </ul>
-               
+
               </div>
             </div>
             <!-- Card -->
@@ -157,31 +147,28 @@
 
                 <!-- Content -->
                 <div class="card-body">
-                  <h5 class="font-weight-bold mt-2">Premium </h5>
+                  <h5 class="font-weight-bold mt-2">4months </h5>
                   <!-- Price -->
                   <div class="pt-0">
-                    <h2 class="h2-responsive display-2 mb-0">20</h2>
+                    <h2 class="h2-responsive display-2 mb-0">
+                    <?php
+                    $loadClasses->percentage($Sixmonths,150);
+                    ?>
+                    <label style="font-size:15px;">/Month</label></h2>
+                    <label style="font-size:15px; color:red;">Discount : <?php echo $Sixmonths."%" ?></label>
                   </div>
                   <!-- Price -->
                   <ul class="list-unstyled striped">
                     <li>
                       <p>
-                        <strong>3</strong> projects</p>
+                        <strong>Unlimited Matches</strong></p>
                     </li>
                     <li>
                       <p>
-                        <strong>200</strong> components</p>
-                    </li>
-                    <li>
-                      <p>
-                        <strong>250</strong> features</p>
-                    </li>
-                    <li>
-                      <p>
-                        <strong>300</strong> members</p>
+                        <strong>3</strong> months</p>
                     </li>
                   </ul>
-            
+
                 </div>
 
               </div>
@@ -197,31 +184,29 @@
 
               <!-- Content -->
               <div class="card-body">
-                <h5 class="font-weight-bold mt-3">Season</h5>
+                <h5 class="font-weight-bold mt-3">12months</h5>
                 <!-- Price -->
                 <div class="pt-0">
-                    <h2 class="h2-responsive display-2 mb-0">20</h2>
+                    <h2 class="h2-responsive display-2 mb-0">
+                    <?php
+                    $loadClasses->percentage($twelvemonths,200);
+                    ?>
+                    <label style="font-size:15px;">/Month</label></h2>
+                    <label style="font-size:15px; color:red;">Discount : <?php echo $twelvemonths."%" ?></label></h2>
+
                   </div>
                 <!-- Price -->
                 <ul class="list-unstyled striped title darker-striped">
                   <li>
                     <p>
-                      <strong>5</strong> projects</p>
+                      <strong>Unlimited Matches</strong></p>
                   </li>
                   <li>
                     <p>
-                      <strong>300</strong> components</p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>350</strong> features</p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>400</strong> members</p>
+                      <strong>12</strong> months</p>
                   </li>
                 </ul>
-               
+
               </div>
 
             </div>

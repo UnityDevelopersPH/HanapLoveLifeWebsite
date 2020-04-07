@@ -1,5 +1,6 @@
 <!-- Button trigger modal -->
-
+<?php include("./function/connection.php");
+$result = $connect->query("SELECT * FROM report_bugs"); ?>
 
 <div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalPopoversLabel">
   <div class="modal-dialog" role="document">
@@ -11,12 +12,12 @@
         </button>
       </div>
       <div class="modal-body">
-    
+
         <p>
-          <a class="tooltip-test" title="" data-original-title="Tooltip" data-toggle="tooltip">This link</a>
-          and
-          <a class="tooltip-test" title="" data-original-title="Tooltip" data-toggle="tooltip">that link</a>
-          have tooltips on hover.</p>
+          <?php while($row = $result->fetch_assoc()){
+            echo $row['messages'];
+          } ?>
+          </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

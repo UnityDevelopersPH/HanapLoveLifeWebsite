@@ -1,7 +1,13 @@
-	<?php 
+	<?php
     require_once 'include/modal.php';
 
   ?>
+<?php
+include('function/connection.php');
+$result = $connect->query("SELECT * FROM report_bugs");
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -75,12 +81,19 @@
 
                 <!-- Table body -->
                 <tbody>
-                  <tr>
-                    <td>hackdog</td>
-                    <td>hackdog@gmail.com</td>
-                    <td>04 / 04 / 2020</td>
-                    <td><button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#exampleModalPopovers"> View </button></td>
-                  </tr>
+
+                  <?php
+
+while($row = $result->fetch_assoc()){
+  echo "<tr>";
+  echo "<td>".$row['username']."</td>";
+  echo "<td>".$row['email']."</td>";
+  echo "<td>".$row['date']."</td>";
+  echo "<td><button class='btn btn-primary btn-sm' type='button' data-toggle='modal' data-target='#exampleModalPopovers'> View </button></td>";
+ echo "</tr>";
+}
+
+                  ?>
                 </tbody>
                 <!-- Table body -->
               </table>

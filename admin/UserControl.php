@@ -1,4 +1,9 @@
-	<!DOCTYPE html>
+  <?php
+  include('function/connection.php');
+  $reuslt = $connect->query("SELECT * FROM user_account");
+  ?>
+
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -88,14 +93,23 @@
 
                 <!-- Table body -->
                 <tbody>
-                  <tr>
-                    <td>hackdog</td>
-                    <td>hackdog@gmail.com</td>
-                    <td>21</td>
-                    <td>Male</td>
-                    <td>0912345678</td>
-                    <td><span class="badge badge-danger badge-lg"> Offline </span></td>
-                  </tr>
+                <?php
+
+                while($rows = $reuslt->fetch_assoc())
+                {
+
+
+                  echo '<tr>';
+                  echo '<td>'.$rows['username'].'</td>';
+                  echo '<td>'.$rows['email'].'</td>';
+                  echo '<td>'.$rows['age'].'</td>';
+                  echo '<td>'.$rows['gender'].'</td>';
+                  echo '<td>'.$rows['phone'].'</td>';
+                  echo '<td><span class="badge badge-danger badge-lg">'. Offline .'</span></td>';
+                  echo '</tr>';
+
+                }
+                 ?>
                 </tbody>
                 <!-- Table body -->
               </table>
